@@ -1,0 +1,128 @@
+# Ignore .cpp files in the ProjA sub-folder and all its subfolders
+#ProjA\*.cpp
+# 
+# Ignore .txt files in this folder 
+#\*.txt
+#
+# Ignore .xml files in this folder and all its sub-folders
+#*.xml
+#
+# Ignore all files in the Temp sub-folder
+#\Temp
+#
+# Do not ignore .dll files in this folder nor in any of its sub-folders
+#!*.dll
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+#
+*.nuget.props
+*.nuget.targets
+# The packages folder can be ignored because of Package Restore
+**\Packages\*
+**\packages\*
+# except build/, which is used as an MSBuild target.
+!**\Packages\build\
+!**\packages\build\
+\AppPackages
+\BundleArtifacts
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+*.Cache
+*.cache
+\csx
+*.build.csdef
+\ecf
+\rcf
+\PublishScripts
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+# Build Results of an ATL Project
+\DebugPS
+\ReleasePS
+\debugPS
+\releasePS
+dlldata.c
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+\.vs
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+\Debug
+\debug
+\DebugPublic
+\debugPublic
+\Release
+\release
+\Releases
+\releases
+\x64
+\x86
+\WIN32
+\win32
+\ARM
+\arm
+\ARM64
+\arm64
+\bld
+\Bin
+\bin
+\Obj
+\obj
+\log
+\Log
+\Logs
+\logs

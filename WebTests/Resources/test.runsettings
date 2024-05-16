@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- Configurations that affect the Test Framework -->
+  <RunConfiguration>
+    <!--<MaxCpuCount>1</MaxCpuCount>-->
+    <!-- Path relative to solution directory -->
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+
+    <!-- [x86] | x64
+      - You can also change it from menu Test, Test Settings, Default Processor Architecture -->
+    <!--<TargetPlatform>x86</TargetPlatform>-->
+
+    <!-- Framework35 | [Framework40] | Framework45 -->
+    <!--<TargetFrameworkVersion>Framework45</TargetFrameworkVersion>-->
+
+    <!-- Path to Test Adapters -->
+    <!--<TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>-->
+  </RunConfiguration>
+
+  <!-- Configurations for data collectors -->
+  <DataCollectionRunSettings>
+    <!--<DataCollectors>
+      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Configuration>
+          <CodeCoverage>
+            --><!--<ModulePaths>
+              <Exclude>
+                <ModulePath>.*Test*.*</ModulePath>
+              </Exclude>
+            </ModulePaths>--><!--
+
+            --><!-- We recommend you do not change the following values: --><!--
+            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <CollectAspDotNet>False</CollectAspDotNet>
+
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+
+    </DataCollectors>-->
+  </DataCollectionRunSettings>
+
+  <!-- Parameters used by tests at runtime -->
+  
+	  <TestRunParameters>
+		  <!--Parameter name="MobileUdid" value="emulator-5554" /-->
+		  <!--Parameter name="AndroidAppPackage" value="" /-->
+		  <!--Parameter name="AndroidAppActivity" value="" /-->
+		  <Parameter name="noReset" value="true" />
+		  <!--Parameter name="AppuimServer" value="" /-->
+		  <!--Parameter name="MobileCloseDriver" value="true" /-->
+		  <!--Parameter name="MobileGlobalUsername" value="" /-->
+		  <!--Parameter name="MobileGlobalPassword" value="" /-->
+		  <Parameter name="WebGlobalUsername" value="admin" />
+		  <Parameter name="WebGlobalPassword" value="123456" />
+		  <Parameter name="WebBaseUrl" value="https://demo.aspnetzero.com/account/login" />
+		  <Parameter name="WebCloseDriver" value="true" />
+		  <Parameter name="ApiBaseUrl" value="" />
+		  <Parameter name="Globalscreenshootpath" value="C://TCs_Screenshots//" />
+		  <Parameter name="Globalexportpath" value="C:\Users\Abdelrahman.Elsadany.CAELUM\Desktop\XX" />
+	  </TestRunParameters>
+
+
+  <!-- Adapter Specific sections -->
+
+  <!-- MSTest adapter -->
+  <!--<MSTest>
+    <MapInconclusiveToFailed>True</MapInconclusiveToFailed>
+    <CaptureTraceOutput>false</CaptureTraceOutput>
+    <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
+    <DeploymentEnabled>False</DeploymentEnabled>
+    <AssemblyResolution>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
+    </AssemblyResolution>
+  </MSTest>-->
+
+</RunSettings>
